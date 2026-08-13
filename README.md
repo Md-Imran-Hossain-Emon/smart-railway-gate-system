@@ -10,31 +10,12 @@
 [![Language](https://img.shields.io/badge/Language-C++-00599C?style=flat-square&logo=cplusplus)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Framework](https://img.shields.io/badge/Framework-Arduino-00979D?style=flat-square&logo=arduino)](https://www.arduino.cc/)
 [![App](https://img.shields.io/badge/Mobile%20App-MIT%20App%20Inventor-orange?style=flat-square)](https://appinventor.mit.edu/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Working%20Prototype-success?style=flat-square)]()
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#license)
+[![Status](https://img.shields.io/badge/Status-Working%20Prototype-success?style=flat-square)](#results)
 
 *A fault-tolerant, edge-computed level-crossing barrier that never fails silently.*
 
-**IoT-based automated railway crossing system using ESP32**
-[View Repository](https://github.com/Md-Imran-Hossain-Emon/smart-railway-gate-system)
-
 </div>
-
----
-
-## 📑 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [How It Works](#how-it-works)
-- [Hardware & Wiring](#hardware--wiring)
-- [System Parameters](#system-parameters)
-- [Mobile Supervisory App](#mobile-supervisory-app)
-- [Results](#results)
-- [Getting Started](#getting-started)
-- [Repository Structure](#repository-structure)
-- [Future Scope](#future-scope)
-- [Author](#author)
-- [License](#license)
 
 ---
 
@@ -59,6 +40,7 @@ The system doesn't just automate gate closure — it **actively monitors its own
 | 🔊 **Visual + Audible Alerts** | Red/Green LEDs and piezo buzzer for physical warning |
 | 📡 **Live Bluetooth Telemetry** | 5 Hz CSV data stream (distances, states, faults, gate position) |
 | 📱 **Mobile Supervisory App** | Built in MIT App Inventor — live gate status + per-sensor fault indicators |
+| 💸 **Low Cost** | Full prototype built for **~3,800 BDT** (~$32) |
 
 ---
 
@@ -93,17 +75,17 @@ The ESP32 continuously reads all four sensors and computes a `detectionCount`. I
 
 ### Bill of Materials
 
-| Component | Qty |
-|---|:---:|
-| ESP32-WROOM-32 | 1 |
-| HC-SR04 Ultrasonic Sensor | 2 |
-| IR Obstacle Sensor | 2 |
-| Micro Servo Motor | 2 |
-| Battery Pack / Adapter | 2 |
-| Piezo Buzzer | 1 |
-| LEDs + Resistors | 2 |
-| Breadboard & Jumper Wires | 1 set |
-| Structural Materials | 1 set |
+| Component | Qty | Unit Price (BDT) |
+|---|:---:|:---:|
+| ESP32-WROOM-32 | 1 | 600 |
+| HC-SR04 Ultrasonic Sensor | 2 | 150 |
+| IR Obstacle Sensor | 2 | 120 |
+| Micro Servo Motor | 2 | 150 |
+| Battery Pack / Adapter | 2 | 150 |
+| Piezo Buzzer | 1 | 50 |
+| LEDs + Resistors | 2 | 20 |
+| Breadboard & Jumper Wires | 1 set | 250 |
+| Structural Materials | 1 set | 300 |
 
 ---
 
@@ -169,7 +151,7 @@ Built with **MIT App Inventor**, the companion app connects over Bluetooth Seria
 
 ### Flash the Firmware
 ```bash
-git clone https://github.com/Md-Imran-Hossain-Emon/smart-railway-gate-system.git
+git clone https://github.com/<your-username>/smart-railway-gate-system.git
 cd smart-railway-gate-system/firmware
 # Open smart_railway_gate.ino in Arduino IDE
 # Select Board: "ESP32 Dev Module"  →  Select correct COM port  →  Upload
@@ -194,7 +176,6 @@ smart-railway-gate-system/
 ├── assets/                        # Diagrams, screenshots, thumbnail
 ├── docs/
 │   └── IEEE_Paper.pdf             # Full technical report (IEEE format)
-├── LICENSE
 └── README.md
 ```
 
@@ -213,8 +194,6 @@ smart-railway-gate-system/
 
 **Md. Imran Hossain Emon**
 Dept. of Electrical & Electronic Engineering, Rajshahi University of Engineering & Technology (RUET)
-
-[![GitHub](https://img.shields.io/badge/GitHub-Md--Imran--Hossain--Emon-181717?style=flat-square&logo=github)](https://github.com/Md-Imran-Hossain-Emon)
 
 Supervised by **Md. Rakibul Islam**, Lecturer, Dept. of EEE, RUET
 *Course: EEE 3100 — Electronics Shop Practice*
