@@ -40,7 +40,6 @@ The system doesn't just automate gate closure — it **actively monitors its own
 | 🔊 **Visual + Audible Alerts** | Red/Green LEDs and piezo buzzer for physical warning |
 | 📡 **Live Bluetooth Telemetry** | 5 Hz CSV data stream (distances, states, faults, gate position) |
 | 📱 **Mobile Supervisory App** | Built in MIT App Inventor — live gate status + per-sensor fault indicators |
-| 💸 **Low Cost** | Full prototype built for **~3,800 BDT** (~$32) |
 
 ---
 
@@ -73,21 +72,6 @@ The ESP32 continuously reads all four sensors and computes a `detectionCount`. I
 | `irPin1` / `irPin2` | 22 / 36 | IR obstacle detection (digital) |
 | `servoPin1` / `servoPin2` | 32 / 33 | PWM — left/right barrier servos |
 
-### Bill of Materials
-
-| Component | Qty | Unit Price (BDT) |
-|---|:---:|:---:|
-| ESP32-WROOM-32 | 1 | 600 |
-| HC-SR04 Ultrasonic Sensor | 2 | 150 |
-| IR Obstacle Sensor | 2 | 120 |
-| Micro Servo Motor | 2 | 150 |
-| Battery Pack / Adapter | 2 | 150 |
-| Piezo Buzzer | 1 | 50 |
-| LEDs + Resistors | 2 | 20 |
-| Breadboard & Jumper Wires | 1 set | 250 |
-| Structural Materials | 1 set | 300 |
-
----
 
 ## ⚙️ System Parameters
 
